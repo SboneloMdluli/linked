@@ -1,17 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Team</title> 
+  <title>Linked</title> 
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./public/css/main.css">
+  <
 </head>
 
 <body>
-
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container d-flex flex-column flex-md-row justify-content-between">
@@ -27,9 +27,6 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Product</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="./business.html">Business</a>
               </li>
               <li class="nav-item">
@@ -39,70 +36,103 @@
           </div>
         </div>
       </nav>
- <div style="clear:both"></div>
-<div class="header">
-        <div class="row">
-            <div class="heading-title text-center">
-                <h3 class="text-uppercase">Our team </h3>
-                <p class="p-top-30">Meet the team behind linked. </p>
-                
-                <p class="p-top-30 "> 
-                  bluh bluh bluh mmmh is all that good stuff? 
-                  Anyway its Linked.
-                 </p>
-            
-               
-             </p>
-           
- </div>
- <div class="centalText">
 
-         <h2>How it works</h2>
-           <hr>
-              <p id ="explanation">
-                 will give summary
-                </p>
-           <p id = "explanation">
-                    what makes it unique all that good stuff
-         </p>
-      </div>
-      <div style="clear:both"></div>
+      <div class="w3-content w3-section">
+          <img class="mySlides" src="./public/images/WhatsApp Image 2019-07-04 at 2.43.06 AM.jpeg" style="width:100%;" height="700">
+          <img class="mySlides" src="./public/images/WhatsApp Image 2019-07-04 at 2.43.12 AM.jpeg" style="width:100%;" height="700">
+          <img class="mySlides" src="./public/images/WhatsApp Image 2019-07-04 at 2.48.16 AM.jpeg" style= "width:100%;" height="700">
+          <img class="mySlides" src="./public/images/WhatsApp Image 2019-07-04 at 2.48.26 AM.jpeg" style="width:100%;" height="700">
+        </div>
+        
+        <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
 
-      <footer class="container py-5">
-          <div class="row">
-         
-            <div class="col-6 col-md">
-              <h5>Features</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Traffic updates</a></li>
-                <li><a class="text-muted" href="#">Price comparisons</a></li>
-                <li><a class="text-muted" href="#">Trip planning</a></li>
-                <li><a class="text-muted" href="#">Trip newsfeed</a></li>
-                <li><a class="text-muted" href="#">Peer to peer contribution</a></li>
-              </ul>
-            </div>
-          
-            <div class="col-6 col-md">
-              <h5>Company</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Business</a></li>
-                <li><a class="text-muted" href="#">Partners</a></li>
-                <li><a class="text-muted" href="#">Contacts</a></li>
+  <div class="centalText">
+
+        <h2>Our Vision</h2>
+        <hr>
+        <p id ="explanation">
+           Simple, realible and informative travelling.
+        </p>
+
+        <p id = "explanation">
+           We get people moving.
+        </p>
+  </div>
+      
+        
+  <div class="centalText" style="background-color: rgb(25, 188, 155)">
+
+      <h2>Our Mission</h2>
+      <hr>
+      <p id ="explanation">
+         Simple, realible and informative travelling.
+      </p>
+
+      <p id = "explanation">
+         We get people moving.
+      </p>
+</div>
              
-              </ul>
-            </div>
-            <div class="col-6 col-md">
-              <h5>About</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="text-muted"  href="./public/views/team.html">Team</a></li>
-                <li><a class="text-muted" href="#">Locations</a></li>
-                <li><a class="text-muted" href="#">Privacy</a></li>
-                <li><a class="text-muted" href="#">Terms</a></li>
-              </ul>
-            </div>
-          </div>
-        </footer>
+<div class="centalText">
+
+    <h2>Our expertise</h2>
+    <hr>
+    <p id ="explanation">
+       Simple, realible and informative travelling.
+    </p>
+
+    <p id = "explanation">
+       We get people moving.
+    </p>
+</div>
+  
+    
      
+  <footer class="container py-5">
+      <div class="row">
+     
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Traffic updates</a></li>
+            <li><a class="text-muted" href="#">Price comparisons</a></li>
+            <li><a class="text-muted" href="#">Trip planning</a></li>
+            <li><a class="text-muted" href="#">Trip newsfeed</a></li>
+            <li><a class="text-muted" href="#">Peer to peer contribution</a></li>
+          </ul>
+        </div>
+      
+        <div class="col-6 col-md">
+          <h5>Company</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Business</a></li>        
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted"  href="./public/views/team.html">Team</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+ 
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
